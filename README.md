@@ -16,3 +16,22 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+
+## Run
+
+### Mac
+
+```bash
+docker compose build
+docker compose run --rm web mix setup
+docker compose up
+```
+
+### WSL 2
+
+```bash
+make setup_for_docker_user
+docker compose build
+docker compose run --rm web mix setup
+docker compose up
+```
